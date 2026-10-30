@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: white;
+}
+
+.hero {
+    background: #e94724;
+    color: white;
+    text-align: center;
+    padding: 45px 20px 35px;
+}
+
+.hero h1 {
+    font-size: 32px;
+    line-height: 1.4;
+    margin-bottom: 25px;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 35px;
+}
+
+.search input {
+    width: 300px;
+    padding: 16px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+}
+
+.services {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    color: #222;
+    width: 220px;
+    height: 180px;
+    padding: 20px;
+    text-align: left;
+    border-radius: 20px;
+    position: relative;
+}
+
+.card h2 {
+    font-size: 18px;
+}
+
+.card p {
+    color: gray;
+    font-size: 12px;
+    margin-top: 8px;
+}
+
+.card small {
+    color: #e94724;
+    display: block;
+    margin-top: 10px;
+}
+
+.emoji {
+    font-size: 48px;
+    text-align: right;
+    margin-top: 10px;
+}
+
+.food, .grocery {
+    max-width: 1050px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+h3 {
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+.items {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    text-align: center;
+}
+
+.items div {
+    font-size: 42px;
+    cursor: pointer;
+}
+
+.items p {
+    font-size: 13px;
+    margin-top: 8px;
+    color: #333;
+}
+
+@media(max-width: 600px) {
+    .hero h1 {
+        font-size: 23px;
+    }
+
+    .search {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .search input {
+        width: 100%;
+    }
+
+    .services {
+        align-items: center;
+    }
+
+    .card {
+        width: 100%;
+    }
+}
